@@ -30,7 +30,17 @@ String nameIntent;
         if (nameText.length() >= 3 && idText.length() >= 3) {
             startActivity(QuizIntent);
         }
+  else {
+            Context context = getApplicationContext();
+            CharSequence text = "Name and Id must be more than 2 digits";
+            int duration = Toast.LENGTH_LONG;
 
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+
+
+
+        }
     }
 
 }
