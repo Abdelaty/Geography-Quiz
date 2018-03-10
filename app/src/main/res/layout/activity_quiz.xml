@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/map"
+    android:orientation="vertical"
+    tools:context="com.example.abdel.geography_quiz.QuizActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_q"
+                android:textColor="@color/fab_color"
+                android:textSize="@dimen/question_text_size" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:id="@+id/q1_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/giza" />
+
+                <RadioButton
+                    android:id="@+id/q1_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="first_Q_Calc"
+                    android:text="@string/cairo" />
+
+                <RadioButton
+                    android:id="@+id/q1_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/berlin" />
+
+                <RadioButton
+                    android:id="@+id/q1_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/beijing" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/second_q"
+                android:textColor="@color/fab_color"
+                android:textSize="@dimen/question_text_size" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:id="@+id/q2_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paris" />
+
+                <RadioButton
+                    android:id="@+id/q2_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alexandria" />
+
+                <RadioButton
+                    android:id="@+id/q2_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="second_Q_Calc"
+                    android:text="@string/beijing" />
+
+                <RadioButton
+                    android:id="@+id/q2_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seoul" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/third_q"
+                android:textColor="@color/fab_color"
+                android:textSize="@dimen/question_text_size" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/radioGroup_marg_bottom">
+
+                <RadioButton
+                    android:id="@+id/q3_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/liberia" />
+
+                <RadioButton
+                    android:id="@+id/q3_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/australia" />
+
+                <RadioButton
+                    android:id="@+id/q3_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="third_Q_Calc"
+                    android:text="@string/sydney" />
+
+                <RadioButton
+                    android:id="@+id/q3_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chad" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fourth_q"
+                android:textColor="@color/fab_color"
+                android:textSize="@dimen/question_text_size" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/radioGroup_marg_bottom">
+
+                <RadioButton
+                    android:id="@+id/q4_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="fourth_Q_Calc"
+                    android:text="@string/madrid" />
+
+                <RadioButton
+                    android:id="@+id/q4_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/conakry" />
+
+                <RadioButton
+                    android:id="@+id/q4_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paramaribo" />
+
+                <RadioButton
+                    android:id="@+id/q4_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/helsinki" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fifth_q"
+                android:textColor="@color/fab_color"
+                android:textSize="@dimen/question_text_size" />
+
+            <RadioGroup
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/radioGroup_marg_bottom">
+
+                <RadioButton
+                    android:id="@+id/q5_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tunis" />
+
+                <RadioButton
+                    android:id="@+id/q5_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pristina" />
+
+                <RadioButton
+                    android:id="@+id/q5_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="fifth_Q_Calc"
+                    android:text="@string/baghdad" />
+
+                <RadioButton
+                    android:id="@+id/q5_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/taipei" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sixth_q"
+                android:textColor="@color/fab_color"
+                android:textSize="@dimen/question_text_size" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/radioGroup_marg_bottom">
+
+                <RadioButton
+                    android:id="@+id/q6_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bucharest" />
+
+                <RadioButton
+                    android:id="@+id/q6_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="sixth_Q_Calc"
+                    android:text="@string/accra" />
+
+                <RadioButton
+                    android:id="@+id/q6_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/victoria" />
+
+                <RadioButton
+                    android:id="@+id/q6_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cairo" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seventh_q"
+                android:textColor="@color/fab_color"
+                android:textSize="@dimen/question_text_size" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/radioGroup_marg_bottom">
+
+                <RadioButton
+                    android:id="@+id/q7_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabat" />
+
+                <RadioButton
+                    android:id="@+id/q7_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brasilia" />
+
+                <RadioButton
+                    android:id="@+id/q7_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/muscat" />
+
+                <RadioButton
+                    android:id="@+id/q7_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="seventh_Q_Calc"
+                    android:text="@string/ottawa" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eighth_q"
+                android:textColor="@color/fab_color"
+                android:textSize="@dimen/question_text_size" />
+
+            <CheckBox
+                android:id="@+id/q8_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_8_ans_a" />
+
+            <CheckBox
+                android:id="@+id/q8_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_8_ans_b" />
+
+            <CheckBox
+                android:id="@+id/q8_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_8_ans_c" />
+
+            <CheckBox
+                android:id="@+id/q8_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_8_ans_d" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ninth_q"
+                android:textColor="@color/fab_color"
+                android:textSize="@dimen/question_text_size" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/answer"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tenth_q"
+                android:textColor="@color/fab_color"
+                android:textSize="@dimen/question_text_size" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/answer"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="calc_print"
+                android:text="@string/submit"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
